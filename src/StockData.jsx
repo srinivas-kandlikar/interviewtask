@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 function StockData() {
     const [name, setName] = useState("5-january-2000")
     const[data, setData] = useState(null);
+    console.log('ad')
 useEffect(function(){
     fetch(`https://jsonmock.hackerrank.com/api/stocks?date=${name}`).then((res)=>res.json())
     .then(info =>
